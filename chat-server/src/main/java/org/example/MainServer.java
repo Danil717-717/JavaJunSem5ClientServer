@@ -8,11 +8,11 @@ import java.net.UnknownHostException;
 public class MainServer {
     public static void main(String[] args) {
         try {
-            //клиент работает с портом 1400, соответственно
-            //сервер тоже должен слушать порт 1400
+            // клиент работает с портом 1400, соответственно
+            // сервер тоже должен слушать порт 1400
             ServerSocket serverSocket = new ServerSocket(1400);
 
-            //так же как и на клиенте создаем экземпляр класса
+            // так же как и на клиенте создаем экземпляр класса
             // обвертки и вызываем метод запуска сервера
             Server server = new Server(serverSocket);
             server.runServer();

@@ -12,15 +12,15 @@ public class MainClient {
         try {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Введите свое имя: ");
-            //Укажите свое имя
+            // Укажите свое имя
             String name = scanner.nextLine();
             Socket socket = new Socket("localhost", 1400);
 
-            //создаем экземпляр класса обвертки
+            // создаем экземпляр класса обвертки
             Client client = new Client(socket,name);
 
             // порт 1400 используем только для подключения
-            //далее используется очередной стек выделенных портов
+            // далее используется очередной стек выделенных портов
             InetAddress inetAddress = socket.getInetAddress();
             System.out.println("InetAddress: " + inetAddress);
             String remoteIp = inetAddress.getHostAddress();
