@@ -52,7 +52,7 @@ public class ClientManager implements Runnable{
         }
     }
 
-    //метод отправки сообщения
+    //метод отправки сообщений
     private void broadcastMessage(String message){
         //пройдет по всем клиентам и найдет клиента
         //имя которого от кого пришло сообщение
